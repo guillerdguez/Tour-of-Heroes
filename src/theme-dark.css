@@ -1,3 +1,26 @@
 @import "primeng/resources/themes/lara-dark-blue/theme.css";
 
-*{color: antiquewhite;}
+* {
+  color: antiquewhite;
+}
+a {
+  background-color: #3f525c;
+}
+
+a:hover {
+  background-color: black;
+}
+
+h1,
+h2,
+h3 {
+  color: antiquewhite;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+i {
+  color: black;
+}

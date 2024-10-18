@@ -17,7 +17,7 @@ import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputSwitchComponent } from './UI/input-switch/input-switch.component';
-
+import { DataViewModule } from 'primeng/dataview';
 import { InputTextModule } from 'primeng/inputtext';
 import { ListboxModule } from 'primeng/listbox';
 @NgModule({
@@ -31,6 +31,7 @@ import { ListboxModule } from 'primeng/listbox';
     InputSwitchComponent,
   ],
   imports: [
+    DataViewModule,
     InputTextModule,
     ListboxModule,
     InputSwitchModule,

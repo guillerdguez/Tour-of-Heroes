@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../Model/Domain/hero';
 import { HeroService } from '../../Service/hero.service';
 import { HeroModel } from '../../Model/Views/Dynamic/HeroModel';
+import { PrimeIcons } from 'primeng/api';
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -22,7 +23,6 @@ export class HeroesComponent implements OnInit {
     }
 
     this.heroService.addHero({ name } as Hero);
-    
   }
 
   delete(hero: Hero): void {
