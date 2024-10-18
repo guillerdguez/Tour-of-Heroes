@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class InputSwitchComponent {
   #document = inject(DOCUMENT);
-  isDarkMode = false;
+  isDarkMode = true;
 
   toggleLightDark() {
     const linkElement = this.#document.getElementById('app-theme') as HTMLLinkElement;

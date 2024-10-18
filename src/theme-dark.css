@@ -3,13 +3,6 @@
 * {
   color: antiquewhite;
 }
-a {
-  background-color: #3f525c;
-}
-
-a:hover {
-  background-color: black;
-}
 
 h1,
 h2,
@@ -23,4 +16,7 @@ h3 {
 
 i {
   color: black;
+}
+a {
+  text-decoration: none;
 }

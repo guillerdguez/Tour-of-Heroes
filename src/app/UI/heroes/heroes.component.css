@@ -79,7 +79,7 @@ button.delete {
   color:  #525252;
   font-size: 1.1rem;
   margin: 0;
-  padding: 1px 10px 3px 10px;
+  padding: 3px 10px ;
 }
 
 button.delete:hover {
