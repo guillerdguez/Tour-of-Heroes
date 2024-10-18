@@ -1,0 +1,43 @@
+<h2>My Heroes</h2>
+
+<div>
+  <label for="new-hero">Hero name: </label>
+  <input id="new-hero" #heroName />
+ 
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroModel.heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>
+
+
+
+
+<!-- <h2>My Heroes</h2>
+
+<div class="p-mb-3">
+  <label for="new-hero" class="p-d-block">Hero name:</label>
+  <p-inputText id="new-hero" [(ngModel)]="heroName" placeholder="Enter hero name"></p-inputText>
+
+ 
+  <p-button label="Add hero" icon="pi pi-plus" (click)="add(heroName.value); heroName.value=''" class="p-mt-2"></p-button>
+</div>
+
+<p-listbox [options]="heroModel.heroes" [(ngModel)]="selectedHero" [listStyle]="{'max-height': '200px'}" [style]="{'width': '300px'}">
+  <ng-template let-hero pTemplate="item">
+    <div class="p-d-flex p-ai-center">
+      <span class="badge p-mr-2">{{hero.id}}</span>
+      <span>{{hero.name}}</span>
+      <p-button icon="pi pi-trash" class="p-ml-auto" (click)="delete(hero)" title="delete hero"></p-button>
+    </div>
+  </ng-template>
+</p-listbox> -->

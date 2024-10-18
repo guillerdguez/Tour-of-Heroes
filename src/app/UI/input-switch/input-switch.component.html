@@ -1,0 +1,6 @@
+<div class="border-1 border-300 border-round p-3 surface-100 shadow-2">
+  <div class="text-xl mb-3">
+    @if (isDarkMode) { Dark   } @else { Light   }
+  </div>
+  <p-inputSwitch [ngModel]="isDarkMode" (ngModelChange)="toggleLightDark()" />
+</div>

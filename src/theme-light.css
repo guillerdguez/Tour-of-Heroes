@@ -1,0 +1,5 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+
+*{color: black;
+}
+button{background-color: black;}
